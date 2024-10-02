@@ -1,7 +1,6 @@
 from random import randint
 
 p1_name = input("Spelare 1, vad är ditt namn?: ")
-p2_name = input("Spelare 2, vad är ditt namn?: ")
 
 p1_class_choice = input(f"""{p1_name}, välj en klass:
       1: Krigare
@@ -16,6 +15,8 @@ elif p1_class_choice == "3":
     p1_class = "Tjuv"
 else:
     print("Du skrev inte ett giltigt nummer, välj en klass.")
+
+p2_name = input("Spelare 2, vad är ditt namn?: ")
 
 p2_class_choice = input(f"""{p2_name}, välj en klass:
       1: Krigare
@@ -123,7 +124,7 @@ while game:
 
     if p1_ability == True:
         p1_use_ability = input(f"{p1_class} {p1_name} vill du använda din klass förmåga? Y/N: ")
-        if p1_use_ability == "Y":
+        if p1_use_ability == "Y" or "y" or "yes" or "Yes" or "Ja" or "ja":
             if p1_class == "Tjuv":
                 temp = p1_roll
                 p1_roll = p2_roll
@@ -144,7 +145,7 @@ while game:
     
     if p2_ability == True:
         p2_use_ability = input(f"{p2_class} {p2_name} vill du använda din klass förmåga? Y/N: ")
-        if p2_use_ability == "Y":
+        if p2_use_ability == "Y" or "y" or "yes" or "Yes" or "Ja" or "ja":
             if p2_class == "Tjuv":
                 temp = p2_roll
                 p2_roll = p1_roll
