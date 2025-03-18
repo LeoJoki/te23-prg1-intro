@@ -44,7 +44,7 @@ Förklaring av Klass Förmågor: 'Alla klasser har en unik förmåga. I Single P
                 p1_class = "Krigare"
                 break
             elif p1_class_choice == "2":
-                p1_class = "Helare"zx<
+                p1_class = "Helare"
                 break
             elif p1_class_choice == "3":
                 p1_class = "Tjuv"
@@ -62,8 +62,8 @@ Förklaring av Klass Förmågor: 'Alla klasser har en unik förmåga. I Single P
 
         com_name= randint(1,10)
         if com_name == 1:
-            com_name = "Jeff"
-        if
+            com_name = Jeff
+        
 
         p1_life = 10
         com_life = 10

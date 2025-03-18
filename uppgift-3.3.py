@@ -17,4 +17,5 @@ side_c = float(side_c_squared) / float(side_c_squared)
 
 print(f"sida c är {side_c}")
 
-if side_c = side_b = side_a
+if side_c == side_b == side_a:
+    
